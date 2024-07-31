@@ -1,0 +1,21 @@
+.headerMountain{
+    position: relative;
+    height: 60px;
+    padding-bottom: 30px;
+}
+.headerMountain img{
+    position: absolute;
+    z-index: 1;
+    // display: flex;
+    
+    object-fit: cover;
+    width: 80%;
+    height: 50px;
+}
+
+.inp{
+    position: absolute;
+    top: 3px;
+    right: 550px;
+    z-index: 2;
+}

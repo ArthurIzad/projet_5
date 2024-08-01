@@ -1,14 +1,18 @@
-import ImgHead from '../component/home_component.js'
-import LogementVis from '../component/test.js'
+import {ImgHead, LogementVis, MyCard} from '../component/home_component.js'
+import {Footer} from '../component/footer.js'
+
 
 
 
 export default function Home(){
     return(
         <>
-            <p>c'est la maison</p>
+            <p>homepage</p>
             <ImgHead />
-            <LogementVis />
+            {/* <LogementVis /> */}
+            <MyCard />
+            <Footer />
+
         </>
     );
 }

@@ -1,7 +1,7 @@
 export default function Propos(){
     return(
         <>
-            <p>ici ça liste</p>
+            <p>ici c'est une liste</p>
         </>
     )
 }

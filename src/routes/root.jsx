@@ -1,12 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import "../style/root.scss"
-import logoKasa from "../asset/logoKasa.png"
+import logo from '../asset/logoKasa.png'
 
 export default function Root() {
     return (
     <>
         <div id="upbar">
-            <img img scr={logoKasa} alt="Logo Kasa"/>
+            <img img scr={logo} alt="Logo Kasa"/>
             <nav>
                 <ul className="menu">
                     <li>

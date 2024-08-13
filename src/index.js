@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.scss';
-import Home from './routes/home';
+import Home from './routes/accueil.jsx';
 import Propos from './routes/a_propos';
-import ImgHead from './component/home_component.js'
+import ImgHead from './component/accueil_component.js'
+import logement from './data/logements.json'
+
+import LogementIndiv from './routes/logement_indiv.jsx';
+
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -23,15 +27,25 @@ const router = createBrowserRouter([
         path: "accueil",
         element: <Home />,
         errorElement: <ErrorPage />,
-
       },
       {
         path: "a_propos",
         element: <Propos />,
         errorElement: <ErrorPage />,
-      }
-    ]
+      },
+      {
+        path: "logement/:id",
+        element: <LogementIndiv />,
+        errorElement: <ErrorPage />,
+    
+      },
+     
+
+    ],
+    
   },
+  
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

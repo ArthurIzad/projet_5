@@ -1,7 +1,15 @@
+import { Footer } from "../component/footer"
+import { ImgHead2, About } from "../component/a_propos_component"
+
 export default function Propos(){
     return(
         <>
-            <p>ici c'est une liste</p>
+            <ImgHead2/>
+            <About/>
+
+
+            <Footer />
+
         </>
     )
 }

@@ -5,8 +5,8 @@ import logo from '../asset/logoKasa.png'
 export default function Root() {
     return (
     <>
-        <div id="upbar">
-            <img img scr={logo} alt="Logo Kasa"/>
+        <header id="upbar">
+            <img scr={logo} alt="Logo Kasa"/>
             <nav>
                 <ul className="menu">
                     <li>
@@ -15,12 +15,15 @@ export default function Root() {
                     <li>
                         <Link to={`a_propos`}>À propos</Link>
                     </li>
+                    {/* <li>
+                        <Link to={`logementindiv`}>Le logement</Link>
+                    </li> */}
                 </ul>
             </nav>
-        </div>
-        <div id="detail">
+        </header>
+        <main id="detail">
             <Outlet />
-        </div>
+        </main>
     </>
     );
   }

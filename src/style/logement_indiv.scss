@@ -1,0 +1,70 @@
+
+
+
+.presentation{
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+}
+
+.mes_images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mes_images img{
+    width: 50%;
+    height: auto;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.txt_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+
+
+}
+
+.tag{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.info_loueur{
+    display: flex;
+    flex-direction: row;
+}
+
+.info_loueur img{
+    width: 30%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.star{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.star i{
+    color: black;
+    width: 30px;
+    height: 20px;;
+}
+
+.menu_deroulant{
+    display: flex;
+    flex-direction: row;
+
+}

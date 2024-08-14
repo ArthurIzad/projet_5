@@ -7,14 +7,13 @@ import logements from '../data/logements.json'
 
 
 export default function LogementIndiv (){
-    // const {id} = useParams()
-    // const logement = logements.find(item => item.id === id)
+    const {id} = useParams()
+    const logement = logements.find(item => item.id === id)
 
     return(
         <>
             <ComponentLogementIndiv 
-                // logement = {logement}
-                
+                logement = {logement}
             />
             <Footer />
         </>

@@ -6,8 +6,6 @@ export default function Propos(){
         <>
             <ImgHead2/>
             <About/>
-
-
             <Footer />
 
         </>

@@ -10,24 +10,14 @@ import { useState } from 'react';
 
 
 
-export function ComponentLogementIndiv(){
-    const {id} = useParams()
-    const logement = logements.find(item => item.id === id)
-    // console.log(logement.pictures)
-    const [index, setIndex] = useState(0);
-
-    function handleClick() {
-        setIndex(index + 1);
-    }
-    let image = logement.pictures[index]
-    console.log(image)
+export function ComponentLogementIndiv({logement}){
     return(
             <>
                 <div className="presentation" key={logement.id}>
                     <div className="mes_images">
                         <button>Prev</button>
                         <img src={logement.pictures}/>
-                        <button onClick={handleClick}>Next</button>
+                        {/* <button onClick={handleClick}>Next</button> */}
 
                     </div>
                     <div className="text">

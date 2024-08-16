@@ -20,7 +20,7 @@ export function MyCard(){
     let mycard = []
     for(let i=0; i<logements.length; i++){
         mycard.push(
-            <>
+            <div className="card" key={logements[i].id}>
                 <Link 
                     to={`/logement/`+ logements[i].id}
                     className="card" 
@@ -41,7 +41,7 @@ export function MyCard(){
                     </div>
                 
                 </Link>            
-            </>  
+            </div> 
         )
         
     }

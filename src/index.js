@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style/index.scss';
 import Home from './routes/accueil.jsx';
 import Propos from './routes/a_propos';
 import ImgHead from './component/accueil_component.js'

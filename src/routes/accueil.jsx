@@ -1,5 +1,6 @@
-import {ImgHead, LogementVis, MyCard, TestClick} from '../component/accueil_component.js'
+import  MyCard from '../component/accueil_component.js'
 import {Footer} from '../component/footer.js'
+import ImgHead from '../component/headerImg_component.js';
 
 
 
@@ -7,10 +8,11 @@ import {Footer} from '../component/footer.js'
 export default function Home(){
     return(
         <>
+        <main>
             <ImgHead />
             <MyCard />
+        </main>
             <Footer />
-
         </>
     );
 }

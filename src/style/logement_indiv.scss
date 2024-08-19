@@ -1,70 +1,112 @@
 
-
-
 .presentation{
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .mes_images{
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    .carrousel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+    }
+    
 
 }
 
-.mes_images img{
-    width: 50%;
-    height: auto;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-}
 
 .txt_info{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    .txt_info_left{
+        width: 60%;
+        h3{
+            font-weight: 600;
+            font-size: 25px;
+            color: #FF6060;
+            margin-top: 25px;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+        }
+        .tag{
+            background-color: #FF6060;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    .txt_info_right{
+        // color: #FF6060;
+        width: 20%;
 
 
-
+        .info_loueur{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 40%;
+                height: auto;
+                border-radius: 100px;
+            }
+        }
+        .star{
+            display: flex;
+            flex-direction: row;
+            .full_star{
+                color: #FF6060;
+            }
+            svg{
+                width: 30px;
+                height: 20px;
+                color: #E3E3E3;
+            }           
+        }
+    }
 }
 
-.tag{
-    display: flex;
-    flex-direction: row;
 
 
-}
-
-.info_loueur{
-    display: flex;
-    flex-direction: row;
-}
-
-.info_loueur img{
-    width: 30%;
-    height: auto;
-    border-radius: 100px;
-}
-
-.star{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.star i{
-    color: black;
-    width: 30px;
-    height: 20px;;
-}
 
 .menu_deroulant{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    // background-color: #F6F6F6;
+    
+
+    section{
+
+        width: 45%;
+        
+        .title_button{
+            display: flex;
+            margin: 0;
+            background-color: #FF6060;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            
+
+        }
+        p{
+            margin: 0;
+            padding: 10px;
+            background-color: #F6F6F6;
+        }
+    }
 
 }

@@ -7,20 +7,19 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import Panel from "./panel_component";
 import Gallery from "./gallery_component";
+import Star from "./star_component";
 
 
 
 
 export function ComponentLogementIndiv({logement}){
-    
     let images = logement.pictures
-    // console.log(images)
+    console.log(logement.host.name)
 
     return(
         <>
             <div className="presentation" key={logement.id}>
                 <div className="mes_images">
-                    {/* <img src={logement.pictures}/> */}
                     <Gallery images={images}/>
 
                 </div>
@@ -35,15 +34,11 @@ export function ComponentLogementIndiv({logement}){
                         </div>
                         <div className="txt_info_right">
                             <div className="info_loueur">
-                                <p>{logement.name}</p>
+                                <p>{logement.host.name}</p>
                                 <img src={logement.host.picture}/>
                             </div>
                             <div className="star">
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />                        
+                                <Star rating={logement.rating}/>            
                             </div>
                         </div>
                     </div>
@@ -54,7 +49,7 @@ export function ComponentLogementIndiv({logement}){
                         />
                         <Panel 
                             title={"Équipements"}
-                            children={logement.description}
+                            children={logement.equipments}
                         />
                     </div>
                 </div>
@@ -63,22 +58,3 @@ export function ComponentLogementIndiv({logement}){
     )
 }
 
-
-
-function Roll(){
-    let menu = document.querySelectorAll(".deroulant_txt")
-    for(let i=0; i<menu.length;i++){
-        if (menu[i].style.display === ""){
-            menu[i].style.display = "none"
-        }else{
-            menu[i].style.display = null
-        }
-        
-    }
-}
-
-function Star(){
-    const {id} = useParams()
-    const logement = logements.find(item => item.id === id)
-
-}

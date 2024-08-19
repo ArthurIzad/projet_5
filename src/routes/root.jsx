@@ -5,25 +5,22 @@ import logo from '../asset/logoKasa.png'
 export default function Root() {
     return (
     <>
-        <header id="upbar">
+        <header className="upbar">
             <img scr={logo} alt="Logo Kasa"/>
             <nav>
                 <ul className="menu">
                     <li>
-                        <Link to={`accueil`}>Accueil</Link>
+                        <Link to={`accueil`} className="Link">Accueil</Link>
                     </li>
                     <li>
-                        <Link to={`a_propos`}>À propos</Link>
+                        <Link to={`a_propos`} className="Link">À propos</Link>
                     </li>
-                    {/* <li>
-                        <Link to={`logementindiv`}>Le logement</Link>
-                    </li> */}
                 </ul>
             </nav>
         </header>
-        <main id="detail">
+        <div id="detail">
             <Outlet />
-        </main>
+        </div>
     </>
     );
   }

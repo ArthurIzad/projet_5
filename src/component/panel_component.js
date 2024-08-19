@@ -15,11 +15,16 @@ export default function Panel({
     }
     return (
         <section className="panel">
-            <h3>{title}</h3>
-            {active ? (<p>{children}</p>) : ""}
-            <button onClick={onShow}>
+            <div className='title_button'>
+                <h3>{title}</h3>
+                <i onClick={onShow}>
                 {active ? <FontAwesomeIcon icon={faAngleDown} /> : <FontAwesomeIcon icon={faAngleUp} />}           
-            </button>
+                </i>
+
+            </div>
+            
+            {active ? (<p>{children}</p>) : ""}
+            
         </section>
     )
 }

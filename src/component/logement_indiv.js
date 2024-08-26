@@ -14,7 +14,11 @@ import Star from "./star_component";
 
 export function ComponentLogementIndiv({logement}){
     let images = logement.pictures
-    console.log(logement.host.name)
+    let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
+    console.log(equipements.key)
+    let tag = logement.tags.map(x => <p key={logement.tag + logement.id}>{x}</p>)
+    console.log(tag)
+
 
     return(
         <>
@@ -29,7 +33,7 @@ export function ComponentLogementIndiv({logement}){
                             <h3>{logement.title}</h3>
                             <p>{logement.location}</p>
                             <div className="tag">
-                                <p>{logement.tags}</p>
+                                {tag}
                             </div>
                         </div>
                         <div className="txt_info_right">
@@ -49,7 +53,7 @@ export function ComponentLogementIndiv({logement}){
                         />
                         <Panel 
                             title={"Équipements"}
-                            children={logement.equipments}
+                            children={equipements}
                         />
                     </div>
                 </div>

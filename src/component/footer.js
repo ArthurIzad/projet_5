@@ -1,5 +1,5 @@
 import logo from '../asset/blackLogo.png'
-import '../style/home_component.scss'
+import '../style/footer.scss'
 
 export function Footer(){
     return(

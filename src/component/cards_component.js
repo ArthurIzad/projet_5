@@ -1,4 +1,4 @@
-import '../style/home_component.scss'
+import '../style/cards.scss'
 import logements from '../data/logements.json'
 import { Link } from "react-router-dom";
 
@@ -14,14 +14,14 @@ export default function MyCard(){
                     className="card" 
                     key={logements[i].id}
                 > 
-                    <div className="cardiv" >
+                    {/* <div className="cardiv" > */}
                         <img
                             className="photoCard"
                             src={logements[i].cover}
                             alt={logements[i].title}                           
                         />
                         <p>{logements[i].title}</p>
-                    </div>                
+                    {/* </div>                 */}
                 </Link>            
         )
         

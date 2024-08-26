@@ -1,0 +1,40 @@
+
+.mes_images{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .carrousel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        .arrowGallery{
+            position: absolute;
+            // left: 20px;
+            bottom: 40%;
+        }
+        .left{
+            left: 20px;
+        }
+        .right{
+            right: 20px;
+        }
+        .activeImage{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+
+
+    }
+    .compteurImg{
+        position: absolute;
+        bottom: 0px;
+        color: white;
+    }
+    
+
+}

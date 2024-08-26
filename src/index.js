@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './routes/accueil.jsx';
 import Propos from './routes/a_propos';
-import ImgHead from './component/accueil_component.js'
-import logement from './data/logements.json'
 
 import LogementIndiv from './routes/logement_indiv.jsx';
 
@@ -14,7 +12,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from "./routes/root";
-import ErrorPage from "./error-page";
+import ErrorPage from "./routes/error-page.jsx";
 
 const router = createBrowserRouter([
   {

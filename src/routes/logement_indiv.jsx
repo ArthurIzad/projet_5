@@ -3,6 +3,7 @@ import { Footer } from "../component/footer";
 import { useParams } from "react-router-dom";
 import logements from '../data/logements.json'
 import ErrorPage from "./error-page";
+import Menu from "../component/menu.js"
 
 
 
@@ -15,6 +16,7 @@ export default function LogementIndiv (){
     }
     return(
         <>
+            <Menu />
             <ComponentLogementIndiv 
                 logement = {logement}
             />

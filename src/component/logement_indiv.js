@@ -38,7 +38,7 @@ export function ComponentLogementIndiv({logement}){
                         </div>
                         <div className="txt_info_right">
                             <div className="info_loueur">
-                                <p>{logement.host.name}</p>
+                                <p className="name">{logement.host.name}</p>
                                 <img src={logement.host.picture}/>
                             </div>
                             <div className="star">

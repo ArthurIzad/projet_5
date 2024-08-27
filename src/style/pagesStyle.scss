@@ -31,11 +31,43 @@ body{
 
 //////////////// page a propos
 
+////taille des panel
+.all_panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .panel{
+        width: 80%;
+    }
+}
 
+///////////////////// error page
 
+.error-page{
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
 
+    h1{
+        font-size: 200px;
+        font-weight: 1000;
+        margin: 0;
 
+    }
+    p{
+        // margin: 0;
+        font-size: 30px;
+    }
+    a{
+        color: black;
+        
 
+    }
+}
 
 
 

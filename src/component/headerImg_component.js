@@ -4,7 +4,7 @@ import "../style/headerImg.scss"
 
 export default function ImgHead() {
     const url = window.location.pathname
-    if(url === "/accueil"){
+    if(url === "/"){
         return(
             <div className="headerMountain">
                 <img src={img1} alt="Montagne"/>

@@ -17,29 +17,47 @@ import ErrorPage from "./routes/error-page.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    // element: <Root />,
+    element : <Home />,
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "accueil",
-        element: <Home />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "a_propos",
-        element: <Propos />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "logement/:id",
-        element: <LogementIndiv />,
-        errorElement: <ErrorPage />,
+    // children: [
+    //   {
+    //     path: "accueil",
+    //     element: <Home />,
+    //     errorElement: <ErrorPage />,
+    //   },
+    //   {
+    //     path: "a_propos",
+    //     element: <Propos />,
+    //     errorElement: <ErrorPage />,
+    //   },
+    //   {
+    //     path: "logement/:id",
+    //     element: <LogementIndiv />,
+    //     errorElement: <ErrorPage />,
     
-      },
+    //   },
      
 
-    ],
+    // ],
     
+    
+  },
+  // {
+  //   path: "accueil",
+  //   element: <Home />,
+  //   errorElement: <ErrorPage />,
+  // },
+  {
+    path: "a_propos",
+    element: <Propos />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "logement/:id",
+    element: <LogementIndiv />,
+    errorElement: <ErrorPage />,
+
   },
   
   

@@ -2,12 +2,11 @@
 .headerMountain{
     display: flex;
     position: relative;
-    height: 60px;
-    padding-bottom: 30px;
+    height: 150px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    height: 80px;
     img{
         border-radius: 25px;
         position: absolute;
@@ -18,5 +17,10 @@
     }
     .inp{
         position: absolute;
+        color: white;
+        font-size: 48px;
+        font-weight:bolder;
+        text-shadow: 1px 1px 2px black;
+
     }
 }

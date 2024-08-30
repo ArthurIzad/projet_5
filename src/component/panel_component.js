@@ -18,7 +18,9 @@ export default function Panel({
         <section className="panel">
             <div className='title_button'>
                 <h3>{title}</h3>
-                {active ? <FontAwesomeIcon icon={faAngleDown} onClick={onShow}/> : <FontAwesomeIcon icon={faAngleUp} onClick={onShow} />}           
+                {/* <FontAwesomeIcon icon={faAngleUp} onClick={onShow} className='down'/> */}
+                {active ? <FontAwesomeIcon icon={faAngleDown} onClick={onShow} className='down'/> 
+                : <FontAwesomeIcon icon={faAngleUp} onClick={onShow} className='up'/>}           
             </div>
             {active ? (<p>{children}</p>) : ""}
         </section>

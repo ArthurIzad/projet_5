@@ -1,14 +1,13 @@
-import logo from '../asset/logoKasa.png'
 import { Link } from "react-router-dom"
 import '../style/menu.scss'
-
+import Logo from "./logo_component";
 
 
 export default function Menu(){
     return (
         <>
             <header className="upbar">
-                <img scr={logo} alt="Logo Kasa"/>
+                <Logo />
                 <nav>
                     <ul className="menu">
                         <li>

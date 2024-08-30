@@ -13,6 +13,7 @@
         h3{
             color: white;
             margin-left: 8px;
+            // transform:  translateX(180px) rotate(45deg);
         }
         svg{
             display: flex;
@@ -21,6 +22,18 @@
             width: 30px;
             height: 30px;
             color: white;
+            transition-property: transform;
+            transition-duration: 0.5s;
+        }
+        .fa-angle-up{
+            &:active{
+                transform: rotate(180deg );
+            }
+        }
+        .fa-angle-down{
+            &:active{
+                transform: rotate(180deg );
+            }
         }
     }
     p{
@@ -28,8 +41,10 @@
         padding: 15px;
     }
 }
+// transform: rotate(0.5turn );
 
-
+// transition-property: transform;
+// transition-duration: 1s;
 
 
 .menu_deroulant{
@@ -53,11 +68,14 @@
             
 
         }
-        // p{
-        //     margin: 0;
-        //     padding: 10px;
-        //     background-color: #F6F6F6;
-        // }
+        p{
+            margin: 0;
+            padding: 10px;
+            background-color: #F6F6F6;
+            li{
+                list-style: none;
+            }
+        }
     }
 
 }

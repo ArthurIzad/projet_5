@@ -1,20 +1,46 @@
 
 //////////////// global
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    margin: 0;
+    // max-width: 10px;
+}
+
+
+#root{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // min-height: 100%;
+    // display: flex;
+    // background-color: red;
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+
+
 header{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 
 main{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    // max-width: 1240px;
+    // min-height: 100%;
+    // flex-grow: 1;
 }
 
-body{
-    font-family: 'Montserrat';
-    margin: 0;
-}
+
+
 
 
 //////////////// page d'accueil
@@ -23,7 +49,7 @@ body{
 
 
 
-//////////////// logement /////////////
+//////////////// logement 
 
 
 

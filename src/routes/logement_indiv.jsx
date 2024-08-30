@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import logements from '../data/logements.json'
 import ErrorPage from "./error-page";
 import Menu from "../component/menu.js"
+import "../style/pagesStyle.scss"
 
 
 
@@ -17,9 +18,12 @@ export default function LogementIndiv (){
     return(
         <>
             <Menu />
-            <ComponentLogementIndiv 
-                logement = {logement}
-            />
+            <main>
+                <ComponentLogementIndiv 
+                    logement = {logement}
+                />
+            </main>
+            
             <Footer />
         </>
     )

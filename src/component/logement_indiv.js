@@ -15,9 +15,7 @@ import Star from "./star_component";
 export function ComponentLogementIndiv({logement}){
     let images = logement.pictures
     let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
-    console.log(equipements.key)
     let tag = logement.tags.map(x => <p key={logement.tag + logement.id}>{x}</p>)
-    console.log(tag)
 
 
     return(

@@ -1,7 +1,31 @@
-.Link{
-    font-weight: 600;
-}
+
 
 .upbar{
-    margin-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            padding-right: 20px;
+            list-style-type: none;
+           
+            &:hover{
+                text-decoration: underline;
+            }
+            a{
+                font-weight: 600;
+            }            
+        }
+    }
+    .logo{
+        width: 15%;
+        height: auto;
+    }
 }
+
+
+
+
+

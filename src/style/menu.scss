@@ -1,23 +1,31 @@
 
-
 .upbar{
     padding-bottom: 30px;
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
     nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        li{
-            padding-right: 20px;
-            list-style-type: none;
-           
-            &:hover{
-                text-decoration: underline;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            li{
+                padding-right: 20px;
+                list-style-type: none;
+               
+                &:hover{
+                    text-decoration: underline;
+                }
+                a{
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: black;
+                }            
             }
-            a{
-                font-weight: 600;
-            }            
         }
+        
     }
     .logo{
         width: 15%;
@@ -26,6 +34,16 @@
 }
 
 
+@media (max-width: 767.98px){
+    .upbar{
+        .logo{
+            width: 35%;
+        }
+        .menu{
+            padding-left: 0px;
+        }
+    }
 
+}
 
 

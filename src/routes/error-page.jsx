@@ -2,6 +2,7 @@ import { useRouteError } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 import '../style/pagesStyle.scss'
 import Menu from "../component/menu";
+import  {Footer} from "../component/footer.js";
 
 export default function ErrorPage() {
     const error = useRouteError();
@@ -17,6 +18,7 @@ export default function ErrorPage() {
                     <Link to={`/`}>Retourner sur la page d'accueil</Link>
                 </div>
             </main>
+            <Footer />
             
         </>
         

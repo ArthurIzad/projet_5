@@ -6,37 +6,43 @@ body{
     justify-content: center;
     font-family: 'Montserrat';
     margin: 0;
-    // max-width: 10px;
+
+    height: 100%;
+    box-sizing: border-box;
 }
 
 
 #root{
-    // display: flex;
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
     // min-height: 100%;
-    // display: flex;
-    // background-color: red;
     width: 100%;
     max-width: 1440px;
-}
 
+    // display: flex;
+    // flex-direction: column;
+    // min-height: 100%;
+}
 
 
 
 header{
     margin-left: 40px;
     margin-right: 40px;
+
+    // flex-grow: 0;
+    // flex-shrink: 0;
 }
 
 
 main{
     margin-left: 40px;
     margin-right: 40px;
-    // max-width: 1240px;
-    // min-height: 100%;
-    // flex-grow: 1;
+    min-height: 100%;
+    
+    // display: flex;
+    // flex-grow: 2;
 }
 
 
@@ -58,16 +64,7 @@ main{
 //////////////// page a propos
 
 ////taille des panel
-.all_panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    .panel{
-        width: 80%;
-    }
-}
+
 
 ///////////////////// error page
 

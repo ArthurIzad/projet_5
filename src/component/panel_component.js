@@ -18,9 +18,12 @@ export default function Panel({
         <section className="panel">
             <div className='title_button'>
                 <h3>{title}</h3>
+                {/* style={{transform: `rotate(0.5turn)`}} */}
+                
                 {/* <FontAwesomeIcon icon={faAngleUp} onClick={onShow} className='down'/> */}
-                {active ? <FontAwesomeIcon icon={faAngleDown} onClick={onShow} className='down'/> 
-                : <FontAwesomeIcon icon={faAngleUp} onClick={onShow} className='up'/>}           
+                {active ? <FontAwesomeIcon icon={faAngleDown} onClick={onShow} className='down'  /> 
+                : <FontAwesomeIcon icon={faAngleUp} onClick={onShow} className='up'  />} 
+                {/* style={{transform: `rotate(0.5turn)`}} */}
             </div>
             {active ? (<p>{children}</p>) : ""}
         </section>

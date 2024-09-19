@@ -13,15 +13,13 @@ export default function MyCard(){
                     to={`/logement/`+ logements[i].id}
                     className="card" 
                     key={logements[i].id}
-                > 
-                    {/* <div className="cardiv" > */}
-                        <img
-                            className="photoCard"
-                            src={logements[i].cover}
-                            alt={logements[i].title}                           
-                        />
-                        <p>{logements[i].title}</p>
-                    {/* </div>                 */}
+                >
+                    <img
+                        className="photoCard"
+                        src={logements[i].cover}
+                        alt={logements[i].title}                           
+                    />
+                    <p>{logements[i].title}</p>
                 </Link>            
         )
         
@@ -30,7 +28,5 @@ export default function MyCard(){
         <div className="AllCard">
             {mycard}
         </div>
-        
-    );
-        
+    )
 }

@@ -13,7 +13,6 @@ export default function LogementIndiv (){
     const logement = logements.find(item => item.id === id)
     if(!logement){
         return <ErrorPage />
-
     }
     return(
         <>

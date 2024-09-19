@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom";
-import { Outlet, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import '../style/pagesStyle.scss'
 import Menu from "../component/menu";
 import  {Footer} from "../component/footer.js";

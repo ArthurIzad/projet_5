@@ -1,22 +1,12 @@
-import { Footer } from "./footer"
-import logements from "../data/logements.json"
 import "../style/logement_indiv.scss"
-import { useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-import Panel from "./panel_component";
-import Gallery from "./gallery_component";
-import Star from "./star_component";
-
-
-
+import Panel from "./panel_component"
+import Gallery from "./gallery_component"
+import Star from "./star_component"
 
 export function ComponentLogementIndiv({logement}){
     let images = logement.pictures
     let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
     let tag = logement.tags.map(x => <p key={logement.tag + logement.id}>{x}</p>)
-
 
     return(
         <>
@@ -40,7 +30,7 @@ export function ComponentLogementIndiv({logement}){
                                 <img src={logement.host.picture}/>
                             </div>
                             <div className="star">
-                                <Star rating={logement.rating}/>            
+                                <Star rating={logement.rating}/>
                             </div>
                         </div>
                     </div>

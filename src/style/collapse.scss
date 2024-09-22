@@ -1,21 +1,23 @@
-
+////////////// dans le menu "a propos" /////////
 
 .panel{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    margin-bottom: 10px;
+
     .title_button{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: #FF6060;
-        margin-bottom: 10px;
         border-radius: 10px;
         h3{
             color: white;
             margin-left: 8px;
         }
+        
         svg{
             display: flex;
             align-self: center;
@@ -40,6 +42,9 @@
     p{
         margin: 0;
         padding: 15px;
+        margin-bottom: 5px;
+        background-color: #F6F6F6;
+        border-radius: 10px;
     }
 }
 
@@ -51,6 +56,7 @@
 // transition-duration: 1s;
 
 ////////////// panel dans le logement
+
 .menu_deroulant{
     display: flex;
     flex-direction: row;
@@ -75,7 +81,6 @@
             }
         }
     }
-
 }
 
 

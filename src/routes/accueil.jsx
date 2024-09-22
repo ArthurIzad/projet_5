@@ -1,13 +1,13 @@
-import  MyCard from '../component/cards_component.js'
-import {Footer} from '../component/footer.js'
-import ImgHead from '../component/headerImg_component.js';
-import Menu from '../component/menu.js';
+import  MyCard from '../component/Cards.js'
+import {Footer} from '../component/Footer.js'
+import ImgHead from '../component/HeaderImg.js';
+import Menu from '../component/Menu.js';
 import "../style/pagesStyle.scss"
 
 
 
 
-export default function Home(){
+export default function Accueil(){
     return(
         <>
         <Menu/>

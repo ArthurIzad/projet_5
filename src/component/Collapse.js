@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import "../style/panel.scss"
+import "../style/collapse.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-export default function Panel({
+export default function Collapse({
     title,
     children,}){
     

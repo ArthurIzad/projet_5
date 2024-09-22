@@ -1,27 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Home from './routes/accueil.jsx';
-import Propos from './routes/a_propos';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Accueil from './routes/accueil.jsx'
+import APropos from './routes/APropos.jsx'
+import LogementIndiv from './routes/LogementIndiv.jsx'
 
-import LogementIndiv from './routes/logement_indiv.jsx';
 
-
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
-import ErrorPage from "./routes/error-page.jsx";
+} from "react-router-dom"
+import ErrorPage from "./routes/ErrorPage.jsx"
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element : <Home />,
+    element : <Accueil />,
     errorElement: <ErrorPage />,
   },
   {
     path: "a_propos",
-    element: <Propos />,
+    element: <APropos />,
     errorElement: <ErrorPage />,
   },
   {

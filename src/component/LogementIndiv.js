@@ -1,9 +1,10 @@
 import "../style/logement_indiv.scss"
-import Panel from "./panel_component"
-import Gallery from "./gallery_component"
-import Star from "./star_component"
+import Panel from "./Collapse"
+import Gallery from "./Gallery"
+import StarRating from "./StarRating"
+import Star from "./StarRating"
 
-export function ComponentLogementIndiv({logement}){
+export function LogementIndivComponent({logement}){
     let images = logement.pictures
     let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
     let tag = logement.tags.map(x => <p key={logement.tag + logement.id}>{x}</p>)
@@ -30,7 +31,7 @@ export function ComponentLogementIndiv({logement}){
                                 <img src={logement.host.picture}/>
                             </div>
                             <div className="star">
-                                <Star rating={logement.rating}/>
+                                <StarRating rating={logement.rating}/>
                             </div>
                         </div>
                     </div>

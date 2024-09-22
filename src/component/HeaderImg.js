@@ -2,7 +2,7 @@ import img1 from "../asset/image/img1.png"
 import img2 from "../asset/image/img2.png"
 import "../style/headerImg.scss"
 
-export default function ImgHead() {
+export default function HeaderImg() {
     const url = window.location.pathname
     if(url === "/"){
         return(

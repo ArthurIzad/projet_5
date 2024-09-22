@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import '../style/star.scss'
 
 
-export default function Star({rating}){
+export default function StarRating({rating}){
     let stars = []
     let n = 0
     while(n < rating){

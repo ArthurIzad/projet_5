@@ -1,8 +1,8 @@
 import { useRouteError } from "react-router-dom";
 import {  Link } from "react-router-dom";
 import '../style/pagesStyle.scss'
-import Menu from "../component/menu";
-import  {Footer} from "../component/footer.js";
+import Menu from "../component/Menu.js";
+import  {Footer} from "../component/Footer.js";
 
 export default function ErrorPage() {
     const error = useRouteError();

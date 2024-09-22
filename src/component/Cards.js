@@ -1,11 +1,11 @@
 import '../style/cards.scss'
-import logements from '../data/logements.json'
+import logements from '../data/Logements.json'
 import { Link } from "react-router-dom";
 
 
 
 
-export default function MyCard(){
+export default function Card(){
     let mycard = []
     for(let i=0; i<logements.length; i++){
         mycard.push(

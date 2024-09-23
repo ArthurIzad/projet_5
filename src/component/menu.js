@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom"
 import '../style/menu.scss'
-import Logo from "./Logo"
-import img from "../asset/blackLogo.png"
+import imgkasa from "../asset/logoKasa.png"
 
 export default function Menu(){
     return (
         <>
             <header className="upbar">
-                {/* <img src="img"/> */}
-                <Logo />
+                <img src={imgkasa} className="logo" alt="logo Kasa"/>
                 <nav>
                     <ul className="menu">
                         <li>
@@ -21,5 +19,5 @@ export default function Menu(){
                 </nav>
             </header>
         </>
-    );
+    )
 }

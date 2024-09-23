@@ -8,27 +8,23 @@ import HeaderImg from "../component/HeaderImg.js"
 export default function APropos(){
     const list = AProposData.map(tab =>
         <>
-        <Collapse
-            title={tab.title}
-            children={tab.content}
-        />
-        
+            <Collapse
+                title={tab.title}
+                children={tab.content}
+                keyCollapse={tab.id}
+            />
         </>
-        
     )
     return(
         <>
             <Menu />
-            
             <main>
                 <HeaderImg />
                 <div className="all_panel">
                     {list}
                 </div>
             </main>
-           
             <Footer />
-
         </>
     )
 }

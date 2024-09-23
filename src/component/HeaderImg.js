@@ -11,7 +11,6 @@ export default function HeaderImg() {
                 <p className="inp">Chez vous, partout et ailleurs</p>
             </div>
         )
-
     }
     if (url === "/a_propos"){
         return (

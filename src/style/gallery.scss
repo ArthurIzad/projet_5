@@ -5,15 +5,12 @@
     flex-direction: column;
     position: relative;
     .carrousel{
-        // display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
         position: relative;
         overflow: hidden;
         border-radius: 25px;
-
-
         .arrowGallery{
             position: absolute;
             bottom: 40%;

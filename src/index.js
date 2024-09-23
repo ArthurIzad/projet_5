@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Accueil from './routes/accueil.jsx'
+import Accueil from './routes/Accueil.jsx'
 import APropos from './routes/APropos.jsx'
 import LogementIndiv from './routes/LogementIndiv.jsx'
 

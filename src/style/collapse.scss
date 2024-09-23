@@ -6,18 +6,17 @@
     justify-content: center;
     width: 80%;
     margin-bottom: 10px;
-
     .title_button{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: #FF6060;
         border-radius: 10px;
+        z-index: 7;
         h3{
             color: white;
             margin-left: 8px;
         }
-        
         svg{
             display: flex;
             align-self: center;
@@ -25,18 +24,14 @@
             width: 30px;
             height: 30px;
             color: white;
-            transition-property: transform;
-            transition-duration: 0.5s;
         }
         .fa-angle-up{
-            &:active{
-                transform: rotate(0.5turn );
-            }
+            animation-name: animationRotationUp;
+            animation-duration: 0.7s;
         }
         .fa-angle-down{
-            &:active{
-                transform: rotate(180deg );
-            }
+            animation-name: animationRotationDown;
+            animation-duration: 0.7s;
         }
     }
     p{
@@ -45,15 +40,34 @@
         margin-bottom: 5px;
         background-color: #F6F6F6;
         border-radius: 10px;
+        animation: 1s slidein;
     }
 }
 
 
+@keyframes slidein {
+    from { margin-top: -5%; }
+    to   { margin-bottom: 0%; }
+}
 
-// transform: rotate(0.5turn );
 
-// transition-property: transform;
-// transition-duration: 1s;
+@keyframes animationRotationUp {
+    1% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes animationRotationDown {
+    1% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
 
 ////////////// panel dans le logement
 
@@ -85,6 +99,7 @@
 
 
 
+
 @media (max-width: 767.98px){
 
     .menu_deroulant{
@@ -111,14 +126,13 @@
             margin-left: 10px;
             margin-top: 2px;
             margin-bottom: 2px;
-
         }
-        svg{
-            
+        svg{        
             padding: 6px;
-            // width: 30px;
-            // height: 30px;
-            
         }
     }
 }
+
+
+
+

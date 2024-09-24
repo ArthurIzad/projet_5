@@ -6,7 +6,7 @@ import "../style/pagesStyle.scss"
 import '../style/cards.scss'
 import logements from '../data/Logements.json'
 import { Link } from "react-router-dom"
-
+////
 export default function Accueil(){
     let mycard = []
     for(let i=0; i<logements.length; i++){

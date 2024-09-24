@@ -1,4 +1,3 @@
-// import { LogementIndivComponent } from "../component/LogementIndiv.js";
 import { Footer } from "../component/Footer.js";
 import { useParams } from "react-router-dom";
 import logements from '../data/Logements.json'
@@ -18,7 +17,10 @@ export default function LogementIndiv (){
 
     let images = logement.pictures
     let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
-    let tag = logement.tags.map(x => <p key={logement.tag + logement.id}>{x}</p>)
+    let tag = logement.tags.map(x => <p key={logement.tags + logement.id}>{x}</p>)
+    // console.log(logement.equipments)
+    console.log(tag)
+    console.log(logement.tags + logement.id)
 
     if(!logement){
         return <ErrorPage />
@@ -27,13 +29,12 @@ export default function LogementIndiv (){
         <>
             <Menu />
             <main>
-                <div className="presentation" >
-                {/* key={logement.id} */}
+                <div className="presentation" key={logement.id}>
                     <div className="mes_images">
                         <Gallery images={images}/>
 
                     </div>
-                    <div className="text">
+                    <div className="text" key={`text`}>
                         <div className="txt_info">
                             <div className="txt_info_left">
                                 <h3>{logement.title}</h3>

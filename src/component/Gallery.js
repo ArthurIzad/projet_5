@@ -28,7 +28,7 @@ export default function Gallery ({images}){
         return(
             <div className='carrousel'>                   
                 <img src={images[index]} className='activeImage'/>
-            </div>               
+            </div>
         )
     }
     else{
@@ -55,7 +55,6 @@ export default function Gallery ({images}){
                 <div className='compteurImg'>
                     <p>{index+1}/{images.length}</p>
                 </div>
-                
             </>
         )
     }

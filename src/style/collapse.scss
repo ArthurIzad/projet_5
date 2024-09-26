@@ -1,4 +1,9 @@
 ////////////// dans le menu "a propos" /////////
+/// 
+
+// transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 
 .panel{
     display: flex;
@@ -24,6 +29,7 @@
             width: 30px;
             height: 30px;
             color: white;
+            
         }
         .fa-angle-up{
             animation-name: animationRotationUp;
@@ -32,24 +38,35 @@
         .fa-angle-down{
             animation-name: animationRotationDown;
             animation-duration: 0.7s;
+            
         }
+        
     }
-    p{
+    .childrenTrue{
         margin: 0;
         padding: 15px;
-        margin-bottom: 5px;
         background-color: #F6F6F6;
         border-radius: 10px;
-        animation: 1s slidein;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+    }
+    .childrenFalse{
+        height: 0px;
+        margin: 0px;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+    }
+    
+}
+
+@keyframes animationRotationc {
+    5% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
 }
-
-
-@keyframes slidein {
-    from { margin-top: -3%; }
-    to   { margin-bottom: 0%; }
-}
-
 
 @keyframes animationRotationUp {
     1% {
@@ -86,14 +103,28 @@
             justify-content: space-between;
             color: white;
         }
-        p{
-            margin: 0;
-            padding: 10px;
-            background-color: #F6F6F6;
-            li{
-                list-style: none;
+        .contentDiv{
+            margin: 0px;
+            .childrenTrue{
+                margin: 0;
+                padding: 15px;
+                background-color: #F6F6F6;
+                border-radius: 10px;
+                transition-timing-function: ease-in-out;
+                transition-duration: 500ms;
+                li{
+                    list-style: none;
+                }
+            }
+            .childrenFalse{
+                height: 0px;
+                margin: 0px;
+                transition-timing-function: ease-in-out;
+                transition-duration: 500ms;
             }
         }
+            
+        
     }
 }
 

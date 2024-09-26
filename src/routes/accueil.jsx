@@ -28,14 +28,16 @@ export default function Accueil(){
     }
     return(
         <>
-        <Menu/>
-        <main>
-            <HeaderImg />
-            <div className="AllCard">
-                {mycard}
-            </div>
-        </main>
-        <Footer />
+            <Menu/>
+            <main>
+                <HeaderImg 
+                    url= {window.location.pathname}
+                />
+                <div className="AllCard">
+                    {mycard}
+                </div>
+            </main>
+            <Footer />
         </>
     );
 }

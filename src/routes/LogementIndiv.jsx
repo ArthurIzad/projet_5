@@ -17,11 +17,12 @@ export default function LogementIndiv (){
 
     let images = logement.pictures
     let equipements = logement.equipments.map(x => <li key={logement.equipments + logement.id}>{x}</li>)
-    let tag = logement.tags.map(x => <p key={logement.tags + logement.id}>{x}</p>)
-    // console.log(logement.equipments)
-    console.log(tag)
-    console.log(logement.tags + logement.id)
-
+    let tag = []
+    for(let i= 0; i<logement.tags.length; i++){
+        tag.push(
+            <p key={logement.tags[i] + logement.id[i]}>{logement.tags[i]}</p>
+        )
+    }
     if(!logement){
         return <ErrorPage />
     }
